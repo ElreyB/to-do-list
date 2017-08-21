@@ -4,4 +4,50 @@
 
 #page2 {
   display: none;
+  height: 300px;
+  width: 300px;
+  font-size: 20px;
+}
+
+body {
+  background-image: url("../img/form_background.jpeg");
+  background-size: cover;
+  background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.well {
+  font-family: 'Indie Flower', cursive;
+  position: absolute;
+  margin-left: 184px;
+  height: 171px;
+  width: 363px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+}
+
+.add_background {
+  background-image: url("../img/list_background.png");
+}
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+  margin-top: 190px;
+  text-align: center;
+}
+
+button {
+  font-size: 20px;
 }
