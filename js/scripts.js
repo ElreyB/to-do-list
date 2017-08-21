@@ -3,7 +3,6 @@
 function Item(item) {
   this.items = item.split(",");
 }
-
 // user interface logic
 $(document).ready(function() {
   $("#toDoForm").submit(function(event) {
@@ -12,11 +11,14 @@ $(document).ready(function() {
 
     var newItems = new Item(itemInput);
     newItems.items.forEach(function(item){
-    $("#toDoList").append("<li><span class='item'>" + item + "</span></li>");
+    $("#toDoList").append("<li class='item'>" + item + "</li>");
     });
     $("input#task").val("");
-    $("span.item").click(function(){
+    $("li.item").click(function(){
       $(this).addClass("strike");
+    });
+    $("#clear").click(function() {
+      $(".strike").remove();
     });
   });
 });
