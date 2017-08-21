@@ -7,6 +7,8 @@ function Item(item) {
 $(document).ready(function() {
   $("#toDoForm").submit(function(event) {
     event.preventDefault();
+    $("#page1").hide();
+    $("#page2").show();
     var itemInput = $("input#task").val();
 
     var newItems = new Item(itemInput);
@@ -19,6 +21,11 @@ $(document).ready(function() {
     });
     $("#clear").click(function() {
       $(".strike").remove();
+    });
+
+    $("#return").click(function(){
+      $("#page2").hide();
+      $("#page1").show();
     });
   });
 });
